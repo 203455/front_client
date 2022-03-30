@@ -28,7 +28,7 @@ function Update() {
                 .then((response)=>{
                     console.log(response.data.pay_load.image)
                     var url="http://localhost:8000"+response.data.pay_load.image;
-                    if (url!="http://localhost:8000undefined") {
+                    if (response.data.pay_load.image!="undefined") {
                         document.getElementById('image').src=url
                     }else{
                         document.getElementById('image').src="http://localhost:8000/media/img/nulo.jpg"

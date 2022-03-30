@@ -218,18 +218,6 @@ fieldset[disabled] .pagination-ellipsis {
   top: 0;
 }
 
-.navbar-burger {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background: none;
-  border: none;
-  color: currentColor;
-  font-family: inherit;
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
-}
 
 /* Bulma Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -281,9 +269,6 @@ textarea {
   margin: 0;
 }
 
-html {
-  box-sizing: border-box;
-}
 
 *, *::before, *::after {
   box-sizing: inherit;
@@ -315,6 +300,7 @@ th:not([align]) {
 }
 
 html {
+  box-sizing: border-box;
   background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -1782,7 +1768,6 @@ fieldset[disabled] .button {
 }
 
 .button.is-loading::after {
-  position: absolute;
   left: calc(50% - (1em * 0.5));
   top: calc(50% - (1em * 0.5));
   position: absolute !important;
@@ -4706,7 +4691,6 @@ fieldset[disabled] .select select:hover {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  padding: 0.75rem 1rem;
 }
 
 .card-image {
@@ -6059,6 +6043,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
+  margin: 0;
   color: #4a4a4a;
   cursor: pointer;
   display: block;
@@ -6066,6 +6051,15 @@ body.has-navbar-fixed-bottom {
   position: relative;
   width: 3.25rem;
   margin-left: auto;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0;
 }
 
 .navbar-burger span {

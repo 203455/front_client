@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Login from './components/Login/Login'
 import reportWebVitals from './reportWebVitals';
-import axios from 'axios';
-import Register from './components/Register/Register'
 
 
 
